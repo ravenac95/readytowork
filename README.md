@@ -22,6 +22,10 @@ progress.
 
 ## Usage
 
+Download this repo. `cd` into the root directory. and do
+
 ```
-curl https://github.com/ravenac95/readytowork
+$ make work
 ```
+
+It's that simple.
