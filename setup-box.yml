@@ -1,0 +1,22 @@
+- hosts: localhost
+  connection: local
+  pre_tasks:
+    - name: Update homebrew
+      homebrew:
+        update_homebrew: yes
+
+    - name: Install git
+      homebrew:
+        name: git
+        state: latest
+  roles:
+    - role: casks
+      casks_to_install:
+        - name: google-chrome
+          install_path: /Applications/Google Chrome.app
+        - name: firefox
+          install_path: /Applications/Firefox.app
+        - name: slack
+          install_path: /Applications/Slack.app
+        - name: docker
+          install_path: /Applications/Docker.app

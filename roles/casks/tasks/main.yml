@@ -1,0 +1,12 @@
+- name: Check for installation 
+  stat: 
+    path: "{{ item.install_path }}"
+  with_items: "{{ casks_to_install }}"
+  register: installed_apps
+
+- name: Install casks
+  homebrew_cask:
+    name: "{{ item.name }}"
+    state: present
+  with_items: "{{ installed_apps.results }}"
+  when: item.stat.exists == False
