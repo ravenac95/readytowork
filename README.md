@@ -18,7 +18,7 @@ progress.
 * Install the following packages:
     * homebrew
     * python (installed with homebrew)
-    * nvm
+    * [n](https://github.com/tj/n)
     * Google Chrome
     * Firefox
     * Slack

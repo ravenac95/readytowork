@@ -1,0 +1,11 @@
+- name: Add tap
+  homebrew_tap:
+    name: "{{ item.name }}"
+  with_items: "{{ taps }}"
+
+- name: Install packages from taps
+  homebrew:
+    name: "{{ item.1 }}"
+  with_subelements:
+    - "{{ taps }}"
+    - packages

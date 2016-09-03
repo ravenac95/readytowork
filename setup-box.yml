@@ -20,3 +20,21 @@
           install_path: /Applications/Slack.app
         - name: docker
           install_path: /Applications/Docker.app
+    - role: homebrew
+      brew_packages_to_install:
+        - node
+        - macvim
+        - docker-compose
+        - jq
+        - couchdb
+        - hub
+    - role: taps
+      taps:
+        - name: ravenac95/sudolikeaboss
+          packages:
+            - sudolikeaboss
+    - role: node-packages
+      node_packages_to_install:
+        - n
+        - nesh
+        - grunt-cli
