@@ -6,6 +6,10 @@ This is an attempt to create a tool, much like boxen, but using ansible. This
 is similar to battleschool which seems to be abandoned. This is still a work in
 progress.
 
+## Prerequisites
+
+* Xcode (Whatever the latest is for your system)
+
 ## Goals
 
 * Require only xcode (and if you're willing to host xcode.dmg's this could be
