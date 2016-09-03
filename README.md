@@ -26,7 +26,7 @@ progress.
 
 ## Usage
 
-Download this repo. `cd` into the root directory. and do
+Download this repo, `cd` into the root directory, and do:
 
 ```
 $ make work
