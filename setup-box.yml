@@ -24,7 +24,6 @@
       brew_packages_to_install:
         - node
         - macvim
-        - docker-compose
         - jq
         - couchdb
         - hub
