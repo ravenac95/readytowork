@@ -6,7 +6,7 @@
 
 - name: Install casks
   homebrew_cask:
-    name: "{{ item.name }}"
+    name: "{{ item.item.name }}"
     state: present
   with_items: "{{ installed_apps.results }}"
   when: item.stat.exists == False
