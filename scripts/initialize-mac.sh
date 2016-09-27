@@ -180,6 +180,8 @@ prereq_install_stage() {
 
     is_installed_check $EXPECTED_PYTHON_LOCATION "python" install_python_with_brew "Python (installed with homebrew)"
 
+    source ~/.bash_profile
+
     # Ensure latest virtualenv and pip
     pip install -U virtualenv pip > /dev/null 2>&1 || exit_with_error "Failed to update virtualenv and pip"
 
